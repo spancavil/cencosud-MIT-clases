@@ -1,0 +1,5 @@
+El patrón Repository se compone típicamente de los siguientes elementos:
+
+Interfaz Repository: Define las operaciones básicas para acceder a los datos, como crear, leer, actualizar y eliminar entidades.
+Implementación del Repository: Implementa la interfaz Repository utilizando la tecnología de almacenamiento específica (base de datos, archivo, etc.). ESTO ES LO QUE CAMBIA EN CASO DE CAMBIAR LA DB.
+Entidades: Representan los objetos del dominio de la aplicación (ejemplo entidad Usuario, entidad Producto, etc)

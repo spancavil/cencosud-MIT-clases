@@ -1,0 +1,5 @@
+1. Add trycatch to all blocks
+2. Add POST PATCH AND DELETE methods for users.
+3. Don't use JSON anymore.
+4. View request object.
+5. Generate array of users in UserRepository.

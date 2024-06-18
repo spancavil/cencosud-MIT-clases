@@ -1,0 +1,3 @@
+Modelo => contiene toda la lógica de negocios, con los modelos y los servicios. También se conecta con la base de datos.
+Vista => Es la capa de presentación al usuario, el formato más común es un HTML mostrando los datos (ReactJS), pero no necesariamente es este. Podría llegar a ser también un PDF, una imagen, datos en formato JSON, XML, correos electrónicos, etc.
+Controller => es el mediador entre el modelo y la vista. Aquí se validan los datos entrantes y se formatean los datos salientes. Por ejemplo se reciben las peticiones HTTP GET POST, etc se validan y se envían al modelo para que sea procesado.
