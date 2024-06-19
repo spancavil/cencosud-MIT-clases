@@ -1,0 +1,4 @@
+Access token vs refresh token
+El token de acceso es el token que se utiliza para el acceso a los recursos protegidos, tiene un vencimiento corto, quizás de 1 día o menos. Una vez que se vence, se envía a refrescar utilizando el refresh token que devuelve un nuevo access token con un nuevo vencimiento.
+Este refresh token tiene vencimiento largo o infinito.
+La idea es tener los refresh tokens en alguna base de datos adicional (porque sino durarían de por vida) y cuando el usuario por ejemplo hace logout, se saca al refresh token de la db o se invalida y no se permite refrescar más para obtener un nuevo token de acceso.

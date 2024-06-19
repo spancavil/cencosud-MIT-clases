@@ -1,0 +1,4 @@
+JWT io => https://jwt.io/
+JWT node => https://www.npmjs.com/package/jsonwebtoken
+View basic error handling => Global error handling express => https://medium.com/@mohsinogen/simplified-guide-to-setting-up-a-global-error-handler-in-express-js-daf8dd640b69
+Send headers error => https://dev.to/collegewap/fix-cannot-set-headers-after-they-are-sent-to-the-client-19gk
