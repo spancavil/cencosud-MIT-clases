@@ -2,6 +2,7 @@ import express from "express"
 import router from "./routes/index.js"
 
 import { rateLimit } from 'express-rate-limit'
+import { errorHandler } from "./middlewares/errorMiddleware.js"
 
 const limiter = rateLimit({
 	windowMs: 5 * 1000, // 5 seconds
@@ -25,10 +26,12 @@ app.use(limiter)
 // Main route
 app.use('/', router)
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   res.send({message: 'Welcome to our app!'})
 })
 
+app.use(errorHandler)
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`JWT app listening on port ${port}`)
 })

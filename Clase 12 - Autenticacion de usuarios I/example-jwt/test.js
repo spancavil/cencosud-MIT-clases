@@ -1,33 +1,21 @@
 import jwt from 'jsonwebtoken'
 
-//View using jsonwebtoken documentation
-
-//function that verifies token
-const verifyToken = (token) => {
-    const verify = jwt.verify(token, "skxinnvJFs")
-    
-    console.log(verify);
-}
+//Sign a token (create new one)
 
 try {
-    //Sign a token
     const token = jwt.sign({
-        name: "Belen",
-        lastname: "Gomez",
-        role: "admin"
-    }, "skxinnvJFs", {expiresIn: '400'})
-    
-    //Verify token
+        name: "Jose",
+        role: "guest"
+    }, "7gFckdLks", {expiresIn: '60'} )
     console.log(token);
-    
-    setTimeout(()=> {
-        verifyToken(token)
+
+    setTimeout(()=>{
+        const isTokenVerified = jwt.verify(token, "7gFckdLks")
+        console.log(isTokenVerified);
     }, 3000)
-    
-    //View decoded (without verifying)
-    const decoded = jwt.decode(token)
-    
-    console.log(decoded);
 } catch (error) {
     console.log(error);
 }
+
+
+//Verify created token
