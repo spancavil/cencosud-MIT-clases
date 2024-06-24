@@ -18,7 +18,7 @@ export const AuthService = {
   },
   signUp: (email, password) => {
     const userFound = users.find(user => user.email === email)
-    throw new Error("Error on signup")
+    // throw new Error("Error on signup")
     if (userFound) return null
     const userToAdd = {
       email, 
