@@ -1,0 +1,7 @@
+Con los decorators nosotros agregamos información adicional (metada) a un target específico para decirle al framework, es decir a NestJS, de qué se trata el target.
+Los ejemplos más comunes son:
+1. Definir rutas HTTP: Los decoradores de ruta permiten crear controladores para manejar solicitudes HTTP. (Ejemplo @Get @Post, etc)
+2. Inyectar dependencias: Los decoradores de inyección permiten obtener instancias de otros servicios en tu aplicación. (@Injectable)
+3. Validaciones: Los decoradores de validación permiten verificar que los datos de entrada cumplan con ciertas reglas (ejemplo @ParseInt)
+4. Parámetros: @Param, @Body, @Query: le indica a nest que el target corresponde a un parámetro específico, por ejemplo al body de una request.
+5. Personalizar el comportamiento: Los decoradores personalizados pueden ser creados para extender las funcionalidades de NestJS.

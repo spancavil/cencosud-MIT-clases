@@ -1,0 +1,3 @@
+First Steps => https://docs.nestjs.com/first-steps
+Pipes => https://docs.nestjs.com/pipes (parseInt)
+Validation techniques => https://docs.nestjs.com/techniques/validation
