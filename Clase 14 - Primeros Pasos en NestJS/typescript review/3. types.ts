@@ -1,22 +1,35 @@
 const message = "Hola mundo"
 console.log(typeof message)
 
-// const point = {
-//     x: 1,
-//     y: 3,
-// }
+const stringArrays: Array<string> = ["barco", "termo", "celular"]
+const stringArrays2: string[] = []
 
-// console.log(`El objeto tiene coordenadas: ${point.x}, ${point.y}`)
+const point = {
+    x: 1,
+    y: 3,
+}
 
-// interface PointWithInterface {
-//     x: number,
-//     y: number,
-// }
+console.log(`El objeto tiene coordenadas: ${point.x}, ${point.y}`)
 
-// type PointWithType = {
-//     x: number,
-//     y: number | null,
-// }
+interface PointWithInterface {
+    x: number,
+    y: number,
+}
+
+type PointWithType = {
+    x: number,
+    y: number | null,
+}
+
+const point2: PointWithInterface = {
+    x: 30,
+    y: 25
+}
+
+const point3: PointWithType = {
+    x: 15,
+    y: 10
+}
 
 // const point2: PointWithInterface = {
 //     x: 4,
