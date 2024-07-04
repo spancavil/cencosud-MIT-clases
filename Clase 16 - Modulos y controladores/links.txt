@@ -1,1 +1,3 @@
 https://docs.nestjs.com/cli/usages
+https://docs.nestjs.com/modules
+https://docs.nestjs.com/controllers
