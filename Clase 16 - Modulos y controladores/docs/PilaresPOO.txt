@@ -1,0 +1,14 @@
+Los objetos se instancian a partir de clases.
+Las clases corresponden con los planos de una casa.
+Las clases definen métodos y propiedades.
+
+Pilar
+Abstracción: definir los atributos y métodos de una clase
+Encapsulamiento: proteger al objeto de manipulaciones no autorizadas
+Herencia: Los hijos heredan atributos y métodos del padre
+Polimorfimos: objetos de clases diferentes pueden tener el mismo comportamiento. Por ejemplo implementando la misma interfaz.
+
+Las interfaces son contratos que definen la entrada y salida de los métodos, pero no especifica cómo implementar esos métodos. Por ejemplo una interfaz podría ser el volante de un auto, todos los autos tienen volante, implementan esa interfaz, pero COMO giran eso ya es  y no sabemos como lo hacen.
+
+Clientes
+partes del programa que utilizan las clases o interfaces

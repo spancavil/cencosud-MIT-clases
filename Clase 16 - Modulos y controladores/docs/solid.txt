@@ -1,0 +1,18 @@
+SOLID son las siglas de unos principios que se usan en el desarrollo de software
+
+S de single responsability principle
+Una entidad de software, sea clase, función, módulo etc, le corresponde una única responsabilidad. Si ya tiene más de una, es decir que podría haber otra entidad que haga parte de la tarea, estaría mal.
+También al tener UNA UNICA responsabilidad, debería tener una sola razón para ser modificada.
+
+O de open-closed principle
+Se refiere a que es preferible EXTENDER una responsabilidad a que modificarla. Por ejemplo una entidad persona puede caminar, ver y saludar. Si por ejemplo se quiere añadir una nueva función a la persona para que también tenga "horas trabajadas" es preferible extender a esa persona a una nueva clase empleado, más que modificar la entidad original de persona.
+
+L principio de substitución de Liskov
+Si tenemos clases hijas y clases padres, las instancias de ambas clases deben poder intercambiarse. Es decir si lo llevamos a nuestro ejemplo de persona y empleado. Dos instancias de ambas clases podrían caminar de igual manera. Si intercambiamos las clases no hay problema con el funcionamiento de sus métodos, funcionan similarmente.
+Otro ejemplo podría ser con una interfaz animal que tiene como método "saltar". Si creamos una clase elefante que intente implementar este método saltar, deberíamos lanzar un error, dado que el elefante NO PUEDE saltar. Entonces no es el comportamiento que defini para un animal, yo quiero que todos los animales salten. Para solventar esto podriamos crear subclases: animalpesado y animalliviano, este último si posee un método saltar. Y una clase elefante hereda entonces de animalpesado, y se estaría respetando ahí si el principio de intercambiabilidad de Liskov.
+
+I interfaces: principio de segregación de interfaces (o separación)
+Las interfaces o contratos no pueden forzar a las clases a implementar más cosas de las que pueden hacer. Para ello es conveniente segregar o separar las interfaces en otras. Por ejemplo tenemos la interfaz factura cuyos metodos pueden ser 
+
+D Dependency inversion o inversión de dependencias
+Básicamente lo que nos dice es que si tenemos una clase, no debemos depender de otras clases concretas, sino más bien de su abstraccion o de la interfaz que implementa esa clase. Lo que se quiere lograr es que las clases dependan lo menos posible una de otra, generando el menor acoplamiento posible.

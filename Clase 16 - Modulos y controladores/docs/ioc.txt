@@ -1,0 +1,3 @@
+Inversion of control (IoC)
+Se trata de delegar el control de las dependencias al framework a través de su contenedor de dependencias. Así si por ejemplo una dependencia es requerida dentro de un módulo, por ejemplo un servicio, el módulo hace una consulta al contenedor dónde estan instanciadas todas las clases necesarias, en lugar de ser el mísmo módulo el que instancia esa clase.
+Este concepto es muy utilizado en varios frameworks, entre ellos, Angular y también Spring Boot.

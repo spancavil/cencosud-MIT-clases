@@ -1,0 +1,2 @@
+Añadir validaciones para el getById y para el post de products.
+Por el momento sólo dejar mensajes.
