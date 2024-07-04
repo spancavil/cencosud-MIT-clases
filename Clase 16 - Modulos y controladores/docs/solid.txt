@@ -12,7 +12,7 @@ Si tenemos clases hijas y clases padres, las instancias de ambas clases deben po
 Otro ejemplo podría ser con una interfaz animal que tiene como método "saltar". Si creamos una clase elefante que intente implementar este método saltar, deberíamos lanzar un error, dado que el elefante NO PUEDE saltar. Entonces no es el comportamiento que defini para un animal, yo quiero que todos los animales salten. Para solventar esto podriamos crear subclases: animalpesado y animalliviano, este último si posee un método saltar. Y una clase elefante hereda entonces de animalpesado, y se estaría respetando ahí si el principio de intercambiabilidad de Liskov.
 
 I interfaces: principio de segregación de interfaces (o separación)
-Las interfaces o contratos no pueden forzar a las clases a implementar más cosas de las que pueden hacer. Para ello es conveniente segregar o separar las interfaces en otras. Por ejemplo tenemos la interfaz factura cuyos metodos pueden ser 
+Las interfaces o contratos no pueden forzar a las clases a implementar más cosas de las que pueden hacer. Para ello es conveniente segregar o separar las interfaces en otras. De esta manera una clase puede implementar varias interfaces a la vez.
 
 D Dependency inversion o inversión de dependencias
 Básicamente lo que nos dice es que si tenemos una clase, no debemos depender de otras clases concretas, sino más bien de su abstraccion o de la interfaz que implementa esa clase. Lo que se quiere lograr es que las clases dependan lo menos posible una de otra, generando el menor acoplamiento posible.
