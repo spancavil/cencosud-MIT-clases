@@ -17,6 +17,7 @@ export class AuthService {
   createUser(createAuthDto: CreateAuthDto) {
     const newUser = {
       ...createAuthDto,
+
       id: this.uuidService.generate(),
     };
     this.users.push(newUser);
@@ -27,7 +28,7 @@ export class AuthService {
     //Add logic to get authenticated user
     return this.jwtServ.sign(
       {
-        role: Role.USER,
+        role: Role.ADMIN,
       },
       {
         secret: process.env.JWT_SECRET,

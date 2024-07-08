@@ -16,6 +16,7 @@ export class AuthController {
   @Post('/signup')
   signUp(@Body() createAuthDto: CreateAuthDto) {
     return this.authService.createUser(createAuthDto);
+    // return "Signup ok"
   }
 
   @Post('/login')
