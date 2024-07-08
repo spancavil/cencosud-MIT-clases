@@ -1,0 +1,5 @@
+Config techniques => https://docs.nestjs.com/techniques/configuration
+UUID => https://www.npmjs.com/package/nestjs-uuid
+JWT => https://github.com/nestjs/jwt
+Validate JWT and Guards => https://medium.com/@bhanushaliyash2000/implementing-an-auth-guard-with-jwt-tokens-in-nest-js-92176a9c3457
+Role based (ONLY ROLE BASED) => https://docs.nestjs.com/security/authorization
