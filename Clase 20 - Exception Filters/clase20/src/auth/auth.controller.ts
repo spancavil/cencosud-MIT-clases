@@ -31,7 +31,9 @@ export class AuthController {
     //Generic exception
     // throw new HttpException("Exception on login", HttpStatus.BAD_REQUEST)
 
-    throw new BadRequestException()
+    //Custom exception
+    // throw new BadRequestException()
+    
     return this.authService.login()
   }
 
