@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Injectable, Inject, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Injectable, Inject, UseGuards, HttpException, HttpStatus } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { CreateAuthDto } from './dto';
 import { UpdateAuthDto } from './dto';
@@ -6,6 +6,7 @@ import { JwtGuard } from './auth.guard';
 import { Role } from './entities';
 import { RolesGuard } from './roles.guard';
 import { Roles } from './decorators/has-roles.decorator';
+import { BadRequestException } from './exceptions';
 
 @Controller('auth')
 export class AuthController {
@@ -15,12 +16,22 @@ export class AuthController {
 
   @Post('/signup')
   signUp(@Body() createAuthDto: CreateAuthDto) {
-    return this.authService.createUser(createAuthDto);
-    // return "Signup ok"
+    try {
+      return this.authService.createUser(createAuthDto);
+      // return "Signup ok"
+    } catch (error) {
+      console.log("Entra en el catch del signup");
+      console.error(error.message);
+      throw new HttpException(error.message, HttpStatus.BAD_REQUEST)
+    }
   }
 
   @Post('/login')
   login(@Body() loginUserDto: any) {
+    //Generic exception
+    // throw new HttpException("Exception on login", HttpStatus.BAD_REQUEST)
+
+    throw new BadRequestException()
     return this.authService.login()
   }
 
