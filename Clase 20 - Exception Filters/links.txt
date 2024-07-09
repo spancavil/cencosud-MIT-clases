@@ -1,0 +1,2 @@
+Exception filters => https://docs.nestjs.com/exception-filters
+Exception filters freecodecamp example => https://www.freecodecamp.org/news/exception-filters-in-nestjs/
