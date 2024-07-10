@@ -1,0 +1,5 @@
+How to stylish components => https://www.freecodecamp.org/news/how-to-style-react-apps-with-css/
+Styled components => https://styled-components.com/docs/basics#installation
+Ejemplo componentización => https://www.figma.com/design/RVMk0mKxtvpMaQOtnSmjTU/Comforty---eCommerce-Figma-Template-(Community)-(Community)?node-id=0-1&t=FD92WiuyFFHf65oL-0
+React typescript => https://react.dev/learn/typescript
+Cheatsheet => https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example/
