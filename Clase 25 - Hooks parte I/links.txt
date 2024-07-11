@@ -1,0 +1,5 @@
+React Hooks => https://react.dev/reference/react/hooks
+StrictMode => https://es.react.dev/reference/react/StrictMode
+SASS basics => https://sass-lang.com/guide/
+useState => https://react.dev/reference/react/useState
+useEffect => https://react.dev/reference/react/useEffect
