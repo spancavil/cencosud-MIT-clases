@@ -1,0 +1,2 @@
+Lifecycle => https://react.dev/learn/lifecycle-of-reactive-effects
+Add debounce => https://www.freecodecamp.org/espanol/news/debouncing-en-react-como-retrasar-una-funcion-en-js/
