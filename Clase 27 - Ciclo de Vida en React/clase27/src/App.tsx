@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "./global/global-styles.module.scss"
+import Search from "./components/Search/Search";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -12,6 +13,7 @@ function App() {
       <button onClick={() => setDarkMode((prevDarkMode) => !prevDarkMode)}>
         Set dark mode
       </button>
+      <Search darkMode={darkMode}/>
     </div>
   )
 }
