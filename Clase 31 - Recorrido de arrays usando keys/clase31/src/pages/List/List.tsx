@@ -1,23 +1,32 @@
 import { useEffect, useState } from "react"
+import { Character } from "../../interfaces/Character"
 
 const base_url = "https://rickandmortyapi.com/api/character/"
 
-//RenderList jsx for rendering the character list
+//RenderList jsx
+const RenderList = ({ characters }: { characters: Character[] }) => {
+  return <></>
+}
 
-//List page
+//List component
 const List = () => {
+  const [page, setPage] = useState(1)
+  const [characters, setCharacters] = useState<Character[]>([])
 
-  //Fetch data
-  useEffect(() => {
-  }, [])
+  //fetch data
+  useEffect(() => {}, [])
 
-  //Order by some key
   const orderBySpecies = () => {}
 
-  //Bring next page
   const handleNextPage = () => {}
 
-  return <div>List</div>
+  return (
+    <div>
+      <button onClick={handleNextPage}>Next page</button>
+      <button onClick={orderBySpecies}>Order by species</button>
+      <RenderList characters={characters} />
+    </div>
+  )
 }
 
 export default List
