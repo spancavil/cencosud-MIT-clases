@@ -1,0 +1,27 @@
+@import "../../global/colors.scss";
+
+.main {
+  width: 300px;
+  background-color: $sky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  .button {
+    background-color: $darkgray;
+    padding: 10px 20px;
+    border: 1px solid $light;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .text {
+    width: 150px;
+    padding: 10px;
+    color: $light;
+    text-align: center;
+    font-size: 30px;
+  }
+}
