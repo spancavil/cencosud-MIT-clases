@@ -1,0 +1,1 @@
+Pure components => https://react.dev/learn/keeping-components-pure
