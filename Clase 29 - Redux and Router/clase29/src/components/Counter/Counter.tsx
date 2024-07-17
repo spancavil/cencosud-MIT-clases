@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styles from "./counter-styles.module.scss"
 import { useAppDispatch, useAppSelector } from "../../hooks/custom-redux"
-import { useDispatch } from "react-redux"
 import {
   decrement,
   increment,
