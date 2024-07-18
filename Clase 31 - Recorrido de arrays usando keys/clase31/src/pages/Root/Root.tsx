@@ -9,8 +9,8 @@ const Root = (props: Props) => {
   const [darkMode, setDarkMode] = useState(false)
   console.log(darkMode)
   return (
-    <div>
-      <h1>Bienvenidas a la clase 29</h1>
+    <div style={{backgroundColor: '#222831'}}>
+      <h1>Bienvenidas a la clase 31</h1>
       <NavBar />
 
       {/* Will render child route elements (news, news/:id, etc) */}
