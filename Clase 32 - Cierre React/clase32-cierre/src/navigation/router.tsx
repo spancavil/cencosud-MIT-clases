@@ -10,6 +10,7 @@ import NewsDetail from "../pages/NewsDetail/NewsDetail"
 import Counter from "../components/Counter/Counter"
 import List from "../pages/List/List"
 import Form from "../components/Form/Form"
+import NotFound from "../pages/NotFound/NotFound"
 
 const router: any = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router: any = createBrowserRouter(
       <Route path="/news/:id" element={<NewsDetail />} />
       <Route path="/form" element ={<Form/>}/>
       <Route path="/counter" element = {<Counter/>} />
+      <Route path= "*" element ={<NotFound/>} />
     </Route>
   )
 )

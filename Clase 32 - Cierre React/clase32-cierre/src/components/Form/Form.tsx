@@ -9,16 +9,19 @@ export default function Form() {
   const [errorName, setErrorName] = useState("")
   const [phone, setPhone] = useState("")
   const [errorPhone, setErrorPhone] = useState("")
+  const [password, setPassword] = useState("")
+  const [errorPassword, setErrorPassword ] = useState("")
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
+      //Prevents the default behaviour. Form: refresh
       e.preventDefault()
 
       //If validation fails, will throw an error.
       await formSchema.validate(
         {
           name,
-          password: "asdasdasdasdasd",
+          password,
           phone,
           email,
         },
@@ -27,6 +30,7 @@ export default function Form() {
       setErrorEmail("")
       setErrorName("")
       setErrorPhone("")
+      setErrorPassword("")
       console.log(`Will send the form validated`)
     } catch (error: any) {
       console.log(Object.keys(error))
@@ -35,10 +39,12 @@ export default function Form() {
       setErrorEmail("")
       setErrorName("")
       setErrorPhone("")
+      setErrorPassword("")
       for (const error of errorsArray) {
         if (error.includes("email")) setErrorEmail(error)
         if (error.includes("name")) setErrorName(error)
         if (error.includes("phone")) setErrorPhone(error)
+        if (error.toLocaleLowerCase().includes("password")) setErrorPassword(error)
       }
     }
   }
@@ -85,6 +91,14 @@ export default function Form() {
             pattern: "[0-9]*",
             maxLength: 10,
           }}
+        />
+        <TextField
+          error={errorPassword ? true : false}
+          helperText={errorPassword}
+          label="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          sx={{ backgroundColor: "white" }}
         />
         <Button type="submit">Send</Button>
       </Box>

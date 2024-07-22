@@ -25,7 +25,11 @@ const Counter = () => {
   }
 
   console.log(count);
-  
+  if (count > 5) {
+    return (
+      <h1>El count es mayor a 5</h1>
+    )
+  }
   return (
     <div className={styles.main}>
       <button onClick={handleMinus} className={styles.button}>-</button>
