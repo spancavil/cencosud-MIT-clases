@@ -1,1 +1,3 @@
 Pure components => https://react.dev/learn/keeping-components-pure
+Yup library => https://www.npmjs.com/package/yup
+Text Field => https://mui.com/material-ui/react-text-field/
